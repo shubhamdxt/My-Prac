@@ -1,5 +1,6 @@
 package testng;
 
+import org.apache.xerces.util.SynchronizedSymbolTable;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.testng.annotations.AfterGroups;
@@ -96,6 +97,7 @@ public class AllTestNgclass {
 	@BeforeTest
 	public void beforeTest() {
 	System.out.println("Before Test will always execute prior to Before Class, ,Before Method and Test Method ");
+	System.out.println("this is testt");
 	}
 
 	@AfterTest
