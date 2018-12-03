@@ -1,0 +1,8 @@
+2018-09-05 20:33:39,127 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-09-05 20:33:39,353 INFO  [Log4j] Web application launched 
+2018-09-05 20:36:41,535 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-09-05 20:36:48,582 INFO  [Log4j] Web application launched 
+2018-09-05 20:36:51,371 INFO  [Log4j] Click action performed on My Account link 
+2018-09-05 20:36:51,498 INFO  [Log4j] Username entered in the Username text box 
+2018-09-05 20:36:51,576 INFO  [Log4j] Password entered in the Password text box 
+2018-09-05 20:36:51,632 INFO  [Log4j] Click action performed on Submit button 

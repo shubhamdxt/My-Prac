@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Multise(failed)" parallel="methods">
+    <classes>
+      <class name="sessionhandle.MultipleSessionDemo">
+        <methods>
+          <include name="tecondMethod"/>
+          <include name="secondMethod"/>
+          <include name="firstMethod"/>
+        </methods>
+      </class> <!-- sessionhandle.MultipleSessionDemo -->
+    </classes>
+  </test> <!-- Multise(failed) -->
+</suite> <!-- Failed suite [Suite] -->
