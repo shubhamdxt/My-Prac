@@ -17,7 +17,8 @@ public class Groupsdemo {
 	 public void Car2() {
 		 
 		   System.out.println("Batch Car - Test car 2");
-		 
+		   System.out.println("Batch Car - Test car 2");
+			 
 		  }
 	 
 	 @Test (groups = { "Scooter" })

@@ -6,3 +6,27 @@
 2018-09-05 20:36:51,498 INFO  [Log4j] Username entered in the Username text box 
 2018-09-05 20:36:51,576 INFO  [Log4j] Password entered in the Password text box 
 2018-09-05 20:36:51,632 INFO  [Log4j] Click action performed on Submit button 
+2018-12-04 19:12:44,171 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-12-04 19:12:50,478 INFO  [Log4j] Web application launched 
+2018-12-04 19:12:57,835 INFO  [Log4j] Click action performed on My Account link 
+2018-12-04 19:12:57,906 INFO  [Log4j] Username entered in the Username text box 
+2018-12-04 19:12:58,008 INFO  [Log4j] Password entered in the Password text box 
+2018-12-04 19:13:03,067 INFO  [Log4j] Click action performed on Submit button 
+2018-12-04 19:15:28,895 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-12-04 19:15:34,734 INFO  [Log4j] Web application launched 
+2018-12-05 15:08:03,026 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-12-05 15:08:07,778 INFO  [Log4j] Web application launched 
+2018-12-05 15:08:09,926 INFO  [Log4j] Click action performed on My Account link 
+2018-12-05 15:08:10,001 INFO  [Log4j] Username entered in the Username text box 
+2018-12-05 15:08:10,070 INFO  [Log4j] Password entered in the Password text box 
+2018-12-05 15:08:10,135 INFO  [Log4j] Click action performed on Submit button 
+2018-12-05 15:08:19,386 INFO  [Log4j] Click action performed on Log out link 
+2018-12-05 15:08:20,449 INFO  [Log4j] Browser closed 
+2018-12-05 15:22:52,892 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-12-05 15:37:39,146 INFO  [Log4j] Web application launched 
+2018-12-05 15:49:18,149 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2018-12-05 15:49:22,369 INFO  [Log4j] Web application launched 
+2018-12-05 15:49:24,349 INFO  [Log4j] Click action performed on My Account link 
+2018-12-05 15:49:24,423 INFO  [Log4j] Username entered in the Username text box 
+2018-12-05 15:49:24,491 INFO  [Log4j] Password entered in the Password text box 
+2018-12-05 15:49:24,563 INFO  [Log4j] Click action performed on Submit button 

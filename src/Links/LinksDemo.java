@@ -18,6 +18,7 @@ public class LinksDemo {
 	driver.manage().window().maximize();
 	driver.get("http://148.76.75.203/vehicular/");
     driver.findElement(By.name("s")).sendKeys(Keys.F5);
+    driver.findElement(By.linkText("CLICK HERE"));
 	
 //	List<WebElement> links = driver.findElements(By.xpath("//input[@type='text'[@class='inputtext']"));
 	//int boxes = driver.findElements(By.xpath(".//*[@class='dijitReset dijitInputInner']")).size();
