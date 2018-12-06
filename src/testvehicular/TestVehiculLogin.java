@@ -19,7 +19,7 @@ public class TestVehiculLogin {
 		driver.manage().window().maximize();
 		driver.get("http://148.76.75.203/vehicular/");
 		Thread.sleep(7000);
-		System.out.println("shubham system test");
+		System.out.println("shubham system test1111");
 	}
 	
 	@Test
