@@ -20,6 +20,7 @@ public class TestVehiculLogin {
 		driver.get("http://148.76.75.203/vehicular/");
 		Thread.sleep(7000);
 		System.out.println("akansha system test1111");
+		System.out.println("Shubham system test1111");
 	}
 	
 	@Test
