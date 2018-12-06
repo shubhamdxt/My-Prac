@@ -18,7 +18,7 @@ public class TestVehiculLogin {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://148.76.75.203/vehicular/");
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 	}
 	
 	@Test
