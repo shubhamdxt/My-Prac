@@ -24,6 +24,7 @@ public class BasicClass {
 	}
 	else {
 		System.out.println("not success");
+		System.out.println("upadate bdgsfcf");
 	}
 	//System.out.println("status of the page :"+status);
 	//	String title=driver.getTitle();

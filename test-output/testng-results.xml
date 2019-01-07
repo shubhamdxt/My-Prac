@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63" started-at="2018-12-03T08:22:34Z" finished-at="2018-12-03T08:22:34Z">
+  <suite name="Default suite" duration-ms="32" started-at="2018-12-26T14:28:45Z" finished-at="2018-12-26T14:28:45Z">
     <groups>
-      <group name="Scooter">
-        <method signature="Groupsdemo.Scooter1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Scooter1" class="testng.Groupsdemo"/>
-        <method signature="Groupsdemo.Scooter2()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Scooter2" class="testng.Groupsdemo"/>
-      </group> <!-- Scooter -->
-      <group name="Car">
-        <method signature="Groupsdemo.Car1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Car1" class="testng.Groupsdemo"/>
-        <method signature="Groupsdemo.Car2()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Car2" class="testng.Groupsdemo"/>
-        <method signature="Groupsdemo.Sedan1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Sedan1" class="testng.Groupsdemo"/>
-      </group> <!-- Car -->
-      <group name="Sedan Car">
-        <method signature="Groupsdemo.Sedan1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Sedan1" class="testng.Groupsdemo"/>
-      </group> <!-- Sedan Car -->
     </groups>
-    <test name="Default test" duration-ms="63" started-at="2018-12-03T08:22:34Z" finished-at="2018-12-03T08:22:34Z">
-      <class name="testng.Groupsdemo">
-        <test-method status="PASS" signature="Car1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Car1" duration-ms="0" started-at="2018-12-03T13:52:34Z" finished-at="2018-12-03T13:52:34Z">
+    <test name="Default test" duration-ms="32" started-at="2018-12-26T14:28:45Z" finished-at="2018-12-26T14:28:45Z">
+      <class name="testng.AllTestNgclass">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Car1 -->
-        <test-method status="PASS" signature="Car2()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Car2" duration-ms="0" started-at="2018-12-03T13:52:34Z" finished-at="2018-12-03T13:52:34Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Car2 -->
-        <test-method status="PASS" signature="Scooter2()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Scooter2" duration-ms="0" started-at="2018-12-03T13:52:34Z" finished-at="2018-12-03T13:52:34Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Scooter2 -->
-        <test-method status="PASS" signature="Scooter1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Scooter1" duration-ms="0" started-at="2018-12-03T13:52:34Z" finished-at="2018-12-03T13:52:34Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="testCase2" duration-ms="16" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Scooter1 -->
-        <test-method status="PASS" signature="Sedan1()[pri:0, instance:testng.Groupsdemo@4667ae56]" name="Sedan1" duration-ms="0" started-at="2018-12-03T13:52:34Z" finished-at="2018-12-03T13:52:34Z">
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Sedan1 -->
-      </class> <!-- testng.Groupsdemo -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="testCase1" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.AllTestNgclass@3fee9989]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-12-26T19:58:45Z" finished-at="2018-12-26T19:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testng.AllTestNgclass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
