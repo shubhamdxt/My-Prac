@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 public class ParameterWithTestNGXML {
 	
 	WebDriver driver;
+	
 	@Test
 	@Parameters({"author","searchKey"})
 	public void testParameter(@Optional("Abc") String author,String searchKey) throws InterruptedException {

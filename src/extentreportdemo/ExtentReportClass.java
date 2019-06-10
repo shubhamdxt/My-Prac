@@ -18,9 +18,9 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportClass {
-	ExtentHtmlReporter htmlReporter;
-	 ExtentReports extent;
-	 ExtentTest logger;
+	  ExtentHtmlReporter htmlReporter;
+	  ExtentReports extent;
+	  ExtentTest logger;
 	 
 	 
 	 @BeforeTest

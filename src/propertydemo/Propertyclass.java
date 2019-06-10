@@ -27,7 +27,9 @@ public class Propertyclass {
 	      
 	      driver.findElement(By.id(obj.getProperty("EmailTextBox"))).sendKeys("testguru99@gmail.com");
 	      
-	      driver.findElement(By.id(obj.getProperty("SignUpButton"))).click();		
+	      driver.findElement(By.id(obj.getProperty("SignUpButton"))).click();
+	      
+	      
 	}
 
 }

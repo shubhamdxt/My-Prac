@@ -30,3 +30,5 @@
 2018-12-05 15:49:24,423 INFO  [Log4j] Username entered in the Username text box 
 2018-12-05 15:49:24,491 INFO  [Log4j] Password entered in the Password text box 
 2018-12-05 15:49:24,563 INFO  [Log4j] Click action performed on Submit button 
+2019-03-29 13:01:21,120 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2019-03-29 13:01:22,890 INFO  [Log4j] Web application launched 

@@ -74,7 +74,7 @@ public class AllTestNgclass {
 		System.out.println("after group is run");
 	}*/
 	
-	@BeforeMethod
+	/*@BeforeMethod
 	public void beforeMethod() {
 	System.out.println(" Before Method will execute before every test method");
 	}
@@ -82,19 +82,21 @@ public class AllTestNgclass {
 	@AfterMethod
 	public void afterMethod() {
 	System.out.println("After Method will execute after every test method ");
-	}
+	}*/
 
 	@BeforeClass
 	public void beforeClass() {
 	System.out.println("Before Class will always execute prior to Before Method and Test Method ");
 	}
 
+	
+	
 	@AfterClass
 	public void afterClass() {
 	System.out.println("After Class will always execute later to After Method and Test method");
 	}
 
-	@BeforeTest
+	/*@BeforeTest
 	public void beforeTest() {
 	System.out.println("Before Test will always execute prior to Before Class, ,Before Method and Test Method ");
 	System.out.println("this is testt");
@@ -124,6 +126,6 @@ public class AllTestNgclass {
 	@Test
 	public void testCase2() {
 	System.out.println("This is my Second Test Case 2");
-	}
+	}*/
 
 }
