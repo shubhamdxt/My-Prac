@@ -32,6 +32,7 @@ public class HandleWindowPop {
 	    		Thread.sleep(2000);
 	    		
 	    		System.out.println("child window pop up title"+driver.getTitle());
+	    		System.out.println("child window pop up title");
 	    		
 	    		driver.close();
 	    		
