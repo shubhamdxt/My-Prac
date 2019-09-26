@@ -13,6 +13,7 @@ public class DuplicateElementAraay {
 		 {
 			 if((a[i]==a[j]) & (i!=j)) {
 				 System.out.println("duplicate element in array"+a[j]);
+				 System.out.println("good");
 			 }
 		 }	
 		}
