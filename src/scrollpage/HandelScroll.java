@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
-public class HandelScroll {
+    public class HandelScroll {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

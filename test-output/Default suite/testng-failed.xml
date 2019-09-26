@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="demo.BasicClass">
+      <class name="demo.DateTimePicker">
         <methods>
-          <include name="test"/>
+          <include name="dateTimePicker"/>
         </methods>
-      </class> <!-- demo.BasicClass -->
+      </class> <!-- demo.DateTimePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class AllTestNgclass {
+	
+	
 	/*
 	@Test
 	public void testcase1() {

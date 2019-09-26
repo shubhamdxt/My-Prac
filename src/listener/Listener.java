@@ -12,9 +12,10 @@ import org.testng.Reporter;
 
 public class Listener implements ITestListener, ISuiteListener,IInvokedMethodListener {
 
+	
 	@Override
-
-	public void onStart(ISuite arg0) {
+    public void onStart(ISuite arg0) 
+	{
 
 		Reporter.log("About to begin isuite executing Suite " + arg0.getName(), true);
 
@@ -24,7 +25,8 @@ public class Listener implements ITestListener, ISuiteListener,IInvokedMethodLis
 
 	@Override
 
-	public void onFinish(ISuite arg0) {
+	public void onFinish(ISuite arg0) 
+	{
 
 		Reporter.log("About to end executing Suite " + arg0.getName(), true);
 

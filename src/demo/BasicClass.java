@@ -4,11 +4,13 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -18,20 +20,124 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.mobile.NetworkConnection;
+import org.openqa.selenium.mobile.NetworkConnection.ConnectionType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class BasicClass {
 	
 	
-	public static void main(String [] args) {
+	public static void main(String [] args) throws Exception {
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver", "G:\\New folder\\BasicDemo\\Driver\\chromedriver.exe");
 		
-		System.setProperty("webdriver.chrome.driver", "G://New folder//BasicDemo//exefile//chromedriver.exe");
-		ChromeDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.xpath("(//a[text()='Login'])[1]")).click();
+		
+	        driver.get("http://www.lexisnexis.com/hottopics/lnacademic/?verb=sf&sfi=AC00NBGenSrch"); 
+	        driver.switchTo().frame("mainFrame");
+	        
+	        List links = driver.findElements(By.tagName("a"));
+
+	        for (int i = 0; i < links.size(); i++) {
+	        WebElement element = (WebElement) links.get(i);
+
+	        // By using "href" attribute, we could get the url of the requried link
+	        String url = element.getAttribute("href");
+
+	        //System.out.println(url);
+	        URL link = new URL(url);
+
+	        // Create a connection using URL object (i.e., link)
+	        HttpURLConnection httpConn = (HttpURLConnection) link.openConnection();
+
+	        // Set the timeout for 2 seconds
+	        httpConn.setConnectTimeout(2000);
+
+	        // connect using connect method
+	        httpConn.connect();
+
+	        // use getResponseCode() to get the response code.
+	        if (httpConn.getResponseCode() >= 400) {
+	            System.out.println(url + " - " + "is Broken Link");
+	            } else {
+	                System.out.println(url + " - " + "is valid Link");
+	            }
+
+	      /*  WebDriverWait waitst = new WebDriverWait(driver, 0);
+	        waitst.until(ExpectedConditions.visibilityOfElementLocated(By.name("sourceTitle")));
+
+	        WebElement sourceTitle = driver.findElement(By.name("sourceTitle"));
+	        sourceTitle.sendKeys("Times"); 
+	        Thread.sleep(5000);
+	        WebElement firstItem = driver.findElement(By.xpath("//*[@class='auto_suggest']/*[@class='title_item']"));
+	        firstItem.click();
+		*/
+	/*	NetworkConnection mobileDriver = (NetworkConnection) driver;
+		 if (mobileDriver.getNetworkConnection() != ConnectionType.ALL) {
+		   // enabling Airplane mode
+		   mobileDriver.setNetworkConnection(ConnectionType.ALL);
+			driver.get("https://vehicular.co.za/");
+		 }
+		  driver.get("http://www.google.com");
+		    WebElement element = driver.findElement(By.name("q"));
+		    element.sendKeys("Cheese!\n"); // send also a "\n"
+		    Thread.sleep(2000);
+		    element.submit();
+		    Thread.sleep(3000);*/
+		    // wait until the google page shows the result
+		/*    WebElement myDynamicElement = (new WebDriverWait(driver, 20))
+		              .until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
+
+		    List<WebElement> findElements = driver.findElements(By.xpath("//*[@id='rso']//h3/a"));
+
+		    // this are all the links you like to visit
+		    for (WebElement webElement : findElements)
+		    {
+		        System.out.println(webElement.getAttribute("href"));
+		    }*/
+/*		//open new tab
+		driver.get("https://vehicular.co.za/");
+		
+		  String pageUrl = "https://vehicular.co.za/";
+		  driver.get(pageUrl);
+		  
+		   Cast webdriver object to Javascript Executor object. 
+		  JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		  
+		   Javascript that will create new FirefoxWindow. 
+		  String jsOpenNewWindow = "window.open('"+pageUrl+"');";
+		   Run above javascript. 
+		  for(int i=0;i<6;i++)
+		  {
+			  jsExecutor.executeScript(jsOpenNewWindow);
+			  Thread.sleep(1000);
+			  System.out.println("One opennd.");
+		  }*/
+	      
+	      
+	/*	String url="https://vehicular.co.za/";
+		((JavascriptExecutor) driver).executeScript("window.open(arguments[0])", url);*/
+		
+		/* FirefoxProfile profile = new FirefoxProfile();
+		
+	        profile.setPreference("permissions.default.desktop-notification", 1);
+	        DesiredCapabilities capabilities=DesiredCapabilities.firefox();
+	        capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+	        driver = new FirefoxDriver(capabilities);
+	        Thread.sleep(3000);
+	        driver.get("https://www.justdial.com/"); 
+	        Thread.sleep(3000);*/
+		
+		
+	/*	driver.findElement(By.xpath("(//a[text()='Login'])[1]")).click();
 		
 	     WebElement email=driver.findElement(By.xpath("(//input[@name='email'])[2]"));
 		 email.sendKeys("shubham@sourcesoftsolutions.com");
@@ -42,7 +148,7 @@ public class BasicClass {
 		
 		
 		WebElement loginBtn=driver.findElement(By.xpath("(//button[text()='Login'])[1]"));
-		loginBtn.click();
+		loginBtn.click();*/
 	
 		
 		
@@ -423,4 +529,4 @@ public class BasicClass {
 	}
 */
 }
-}
+}}

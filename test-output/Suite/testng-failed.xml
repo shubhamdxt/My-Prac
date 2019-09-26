@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Multise(failed)" parallel="methods">
+  <listeners>
+    <listener class-name="testnglistener.ListenersBlog"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="sessionhandle.MultipleSessionDemo">
+      <class name="testnglistener.TestNGListenersTest">
         <methods>
-          <include name="tecondMethod"/>
-          <include name="secondMethod"/>
-          <include name="firstMethod"/>
+          <include name="sampleTest4"/>
+          <include name="sampleTest2"/>
+          <include name="sampleTest1"/>
         </methods>
-      </class> <!-- sessionhandle.MultipleSessionDemo -->
+      </class> <!-- testnglistener.TestNGListenersTest -->
     </classes>
-  </test> <!-- Multise(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
