@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="demo.DateTimePicker">
+      <class name="parametrizedemo.ParameterWithTestNGXML">
         <methods>
-          <include name="dateTimePicker"/>
+          <include name="testParameter"/>
         </methods>
-      </class> <!-- demo.DateTimePicker -->
+      </class> <!-- parametrizedemo.ParameterWithTestNGXML -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

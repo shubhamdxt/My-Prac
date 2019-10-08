@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class DateTimePicker {
 	
 	
-	public void dateTimePicker() throws Exception
+	public static  void main(String [] args) throws Exception
 	{
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "G:\\New folder\\BasicDemo\\Driver\\chromedriver.exe");
@@ -25,7 +25,7 @@ public class DateTimePicker {
 		Actions ac=new Actions(driver);
 		ac.moveByOffset(5, 5);
 		dateBox.sendKeys("08232019");
-		Thread.sleep(2000);
+		
 		
 	//	dateBox.sendKeys(Keys.TAB);
 		Thread.sleep(2000);
