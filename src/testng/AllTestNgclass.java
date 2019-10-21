@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class AllTestNgclass {
 	
 	
-	/*
+	
 	@Test
 	public void testcase1() {
 		System.out.println("testcase1 is run");
@@ -74,7 +74,7 @@ public class AllTestNgclass {
 	@AfterGroups
 	public void afterGroups() {
 		System.out.println("after group is run");
-	}*/
+	}
 	
 	/*@BeforeMethod
 	public void beforeMethod() {
@@ -86,7 +86,7 @@ public class AllTestNgclass {
 	System.out.println("After Method will execute after every test method ");
 	}*/
 
-	@BeforeClass
+/*	@BeforeClass
 	public void beforeClass() {
 	System.out.println("Before Class will always execute prior to Before Method and Test Method ");
 	}
@@ -97,7 +97,7 @@ public class AllTestNgclass {
 	public void afterClass() {
 	System.out.println("After Class will always execute later to After Method and Test method");
 	}
-
+*/
 	/*@BeforeTest
 	public void beforeTest() {
 	System.out.println("Before Test will always execute prior to Before Class, ,Before Method and Test Method ");

@@ -23,7 +23,7 @@ public class InvalidImage {
 		//driver.get("http://google.com");
 		driver.get("https://www.edureka.co/");
 		List<WebElement> imagesList = driver.findElements(By.tagName("img")); 
-		System.out.println("Total no. of images are " + imagesList.size()); 
+		System.out.println("Total no of images are " + imagesList.size()); 
 
 		for (WebElement imgElement : imagesList) { 
 		 if (imgElement != null) { 

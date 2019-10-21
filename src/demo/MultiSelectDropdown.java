@@ -21,11 +21,11 @@ public class MultiSelectDropdown {
 		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple");
         
 
-        WebElement select1 = driver.findElement(By.xpath("//option[@value='Volvo']"));
+          WebElement select1 = driver.findElement(By.xpath("//option[@value='Volvo']"));
        // WebElement select2 = driver.findElement(By.xpath("//option[@value='Saab']"));
-Thread.sleep(2000);
-        Actions action = new Actions(driver);
-        action.keyDown(Keys.CONTROL).click(select1).build().perform();
+          Thread.sleep(2000);
+          Actions action = new Actions(driver);
+          action.keyDown(Keys.CONTROL).click(select1).build().perform();
 	}
 
 }

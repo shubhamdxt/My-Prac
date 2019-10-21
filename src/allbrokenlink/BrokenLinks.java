@@ -31,7 +31,8 @@ public class BrokenLinks {
         
         Iterator<WebElement> it = links.iterator();
         
-        while(it.hasNext()){
+        while(it.hasNext())
+        {
             
             url = it.next().getAttribute("href");
             
