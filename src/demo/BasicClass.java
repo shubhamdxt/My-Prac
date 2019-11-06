@@ -42,11 +42,16 @@ public class BasicClass {
 		
 		
 	        driver.get("http://www.lexisnexis.com/hottopics/lnacademic/?verb=sf&sfi=AC00NBGenSrch"); 
-	        driver.switchTo().frame("mainFrame");
+	        
+	        String selectLinkOpeninNewTab = Keys.chord(Keys.CONTROL,"t");
+	        driver.findElement(By.linkText("urlLink")).sendKeys(selectLinkOpeninNewTab);
+
+	       /* driver.switchTo().frame("mainFrame");
 	        
 	        List links = driver.findElements(By.tagName("a"));
 
-	        for (int i = 0; i < links.size(); i++) {
+	        for (int i = 0; i < links.size(); i++) 
+	        {
 	        WebElement element = (WebElement) links.get(i);
 
 	        // By using "href" attribute, we could get the url of the requried link
@@ -65,13 +70,16 @@ public class BasicClass {
 	        httpConn.connect();
 
 	        // use getResponseCode() to get the response code.
-	        if (httpConn.getResponseCode() >= 400) {
+	        if (httpConn.getResponseCode() >= 400) 
+	            {
 	            System.out.println(url + " - " + "is Broken Link");
-	            } else {
+	            } 
+	        else 
+	            {
 	                System.out.println(url + " - " + "is valid Link");
 	            }
 
-	      /*  WebDriverWait waitst = new WebDriverWait(driver, 0);
+	        WebDriverWait waitst = new WebDriverWait(driver, 0);
 	        waitst.until(ExpectedConditions.visibilityOfElementLocated(By.name("sourceTitle")));
 
 	        WebElement sourceTitle = driver.findElement(By.name("sourceTitle"));
@@ -79,8 +87,8 @@ public class BasicClass {
 	        Thread.sleep(5000);
 	        WebElement firstItem = driver.findElement(By.xpath("//*[@class='auto_suggest']/*[@class='title_item']"));
 	        firstItem.click();
-		*/
-	/*	NetworkConnection mobileDriver = (NetworkConnection) driver;
+		
+		NetworkConnection mobileDriver = (NetworkConnection) driver;
 		 if (mobileDriver.getNetworkConnection() != ConnectionType.ALL) {
 		   // enabling Airplane mode
 		   mobileDriver.setNetworkConnection(ConnectionType.ALL);
@@ -91,9 +99,9 @@ public class BasicClass {
 		    element.sendKeys("Cheese!\n"); // send also a "\n"
 		    Thread.sleep(2000);
 		    element.submit();
-		    Thread.sleep(3000);*/
+		    Thread.sleep(3000);
 		    // wait until the google page shows the result
-		/*    WebElement myDynamicElement = (new WebDriverWait(driver, 20))
+		    WebElement myDynamicElement = (new WebDriverWait(driver, 20))
 		              .until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
 
 		    List<WebElement> findElements = driver.findElements(By.xpath("//*[@id='rso']//h3/a"));
@@ -102,8 +110,8 @@ public class BasicClass {
 		    for (WebElement webElement : findElements)
 		    {
 		        System.out.println(webElement.getAttribute("href"));
-		    }*/
-/*		//open new tab
+		    }
+		//open new tab
 		driver.get("https://vehicular.co.za/");
 		
 		  String pageUrl = "https://vehicular.co.za/";
@@ -120,13 +128,13 @@ public class BasicClass {
 			  jsExecutor.executeScript(jsOpenNewWindow);
 			  Thread.sleep(1000);
 			  System.out.println("One opennd.");
-		  }*/
+		  }
 	      
 	      
-	/*	String url="https://vehicular.co.za/";
-		((JavascriptExecutor) driver).executeScript("window.open(arguments[0])", url);*/
+		String url="https://vehicular.co.za/";
+		((JavascriptExecutor) driver).executeScript("window.open(arguments[0])", url);
 		
-		/* FirefoxProfile profile = new FirefoxProfile();
+		 FirefoxProfile profile = new FirefoxProfile();
 		
 	        profile.setPreference("permissions.default.desktop-notification", 1);
 	        DesiredCapabilities capabilities=DesiredCapabilities.firefox();
@@ -134,10 +142,10 @@ public class BasicClass {
 	        driver = new FirefoxDriver(capabilities);
 	        Thread.sleep(3000);
 	        driver.get("https://www.justdial.com/"); 
-	        Thread.sleep(3000);*/
+	        Thread.sleep(3000);
 		
 		
-	/*	driver.findElement(By.xpath("(//a[text()='Login'])[1]")).click();
+		driver.findElement(By.xpath("(//a[text()='Login'])[1]")).click();
 		
 	     WebElement email=driver.findElement(By.xpath("(//input[@name='email'])[2]"));
 		 email.sendKeys("shubham@sourcesoftsolutions.com");
@@ -148,15 +156,15 @@ public class BasicClass {
 		
 		
 		WebElement loginBtn=driver.findElement(By.xpath("(//button[text()='Login'])[1]"));
-		loginBtn.click();*/
+		loginBtn.click();
 	
 		
 		
 		
 		
-		/*Dimension d = new Dimension(500,500);
-		driver.manage().window().setSize(d);*/
-				/*CASE- 1. Both User name and Password are entered correctly. 
+		Dimension d = new Dimension(500,500);
+		driver.manage().window().setSize(d);
+				CASE- 1. Both User name and Password are entered correctly. 
 				Check whether Email field exists or not 
 				    try
 				        {
@@ -428,9 +436,9 @@ public class BasicClass {
 				//closing current driver window	
 						driver.close();
 						
-					}*/
+					}
 		
-/*	public static void main(String[] args) throws AWTException, Exception {
+	public static void main(String[] args) throws AWTException, Exception {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "G://New folder//BasicDemo//exefile//chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
@@ -494,9 +502,9 @@ public class BasicClass {
 	//System.out.println("title of the page :"+title);
 		
 
-	}*/
+	}
 	
-	/*private static boolean netIsAvailable() {
+	private static boolean netIsAvailable() {
 		
 	    try {
 	    	
@@ -510,9 +518,9 @@ public class BasicClass {
 	    } catch (IOException e) {
 	        return false;
 	    }
-	}*/
+	}
 	
-/*	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver", "G://New folder//BasicDemo//exefile//chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -529,4 +537,4 @@ public class BasicClass {
 	}
 */
 }
-}}
+}

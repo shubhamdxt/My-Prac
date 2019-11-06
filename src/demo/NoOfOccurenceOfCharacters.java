@@ -2,8 +2,6 @@ package demo;
 
 public class NoOfOccurenceOfCharacters {
 
-	
-	
 	public static void main(String[] args) {
 		
 		 final int MAX_CHAR = 256; 
@@ -14,6 +12,7 @@ public class NoOfOccurenceOfCharacters {
 	  
 	        // Initialize count array index 
 	        for (int i = 0; i < len; i++) 
+	        	
 	            count[str.charAt(i)]++; 
 	  
 	        // Create an array of given String size 

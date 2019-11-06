@@ -48,7 +48,7 @@ public class AllTestNgclass {
 	
 	@BeforeTest
 	public void beforeTest() {
-		System.out.println("beforeTest is run");
+		//System.out.println("beforeTest is run");
 	}
 	
 	@AfterTest

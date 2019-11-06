@@ -69,7 +69,7 @@ public class ActionsDemo {
 				   
 				    driver.get("https://www.google.com");
 				    WebElement searchBox = new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.id("lst-ib")));
-				   System.out.println(searchBox);
+				    System.out.println(searchBox);
 				    searchBox.sendKeys(query);
 
 				    // make sure it has focus
@@ -81,7 +81,9 @@ public class ActionsDemo {
 				    int length = query.substring(0, query.indexOf("a")).length();
 
 				    actions.keyDown(Keys.LEFT_SHIFT);
+				    
 				    for (int i = 0; i < length; i++){
+				    	
 				        actions.sendKeys(Keys.ARROW_RIGHT);
 				    }
 				    actions.keyUp(Keys.LEFT_SHIFT);
